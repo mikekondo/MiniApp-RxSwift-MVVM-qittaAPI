@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		956AC76B2897A5FF0054FCC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956AC76A2897A5FF0054FCC3 /* AppDelegate.swift */; };
+		956AC76D2897A5FF0054FCC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956AC76C2897A5FF0054FCC3 /* SceneDelegate.swift */; };
+		956AC76F2897A5FF0054FCC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956AC76E2897A5FF0054FCC3 /* ViewController.swift */; };
+		956AC7722897A5FF0054FCC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 956AC7702897A5FF0054FCC3 /* Main.storyboard */; };
+		956AC7742897A6000054FCC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956AC7732897A6000054FCC3 /* Assets.xcassets */; };
+		956AC7772897A6000054FCC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 956AC7752897A6000054FCC3 /* LaunchScreen.storyboard */; };
+		956AC7822897A65C0054FCC3 /* QittaArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956AC7812897A65C0054FCC3 /* QittaArticle.swift */; };
+		956AC7842897A74F0054FCC3 /* QittaArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956AC7832897A74F0054FCC3 /* QittaArticleViewModel.swift */; };
+		956AC7872897A76B0054FCC3 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 956AC7862897A76B0054FCC3 /* RxCocoa */; };
+		956AC7892897A76B0054FCC3 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 956AC7882897A76B0054FCC3 /* RxRelay */; };
+		956AC78B2897A76B0054FCC3 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 956AC78A2897A76B0054FCC3 /* RxSwift */; };
+		956AC78E2897AB820054FCC3 /* QittaArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956AC78C2897AB820054FCC3 /* QittaArticleTableViewCell.swift */; };
+		956AC78F2897AB820054FCC3 /* QittaArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 956AC78D2897AB820054FCC3 /* QittaArticleTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		956AC7672897A5FF0054FCC3 /* RxSwift-MVVM-qittaAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift-MVVM-qittaAPI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		956AC76A2897A5FF0054FCC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		956AC76C2897A5FF0054FCC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		956AC76E2897A5FF0054FCC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		956AC7712897A5FF0054FCC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		956AC7732897A6000054FCC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		956AC7762897A6000054FCC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		956AC7782897A6000054FCC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		956AC7812897A65C0054FCC3 /* QittaArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QittaArticle.swift; sourceTree = "<group>"; };
+		956AC7832897A74F0054FCC3 /* QittaArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QittaArticleViewModel.swift; sourceTree = "<group>"; };
+		956AC78C2897AB820054FCC3 /* QittaArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QittaArticleTableViewCell.swift; sourceTree = "<group>"; };
+		956AC78D2897AB820054FCC3 /* QittaArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QittaArticleTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		956AC7642897A5FF0054FCC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				956AC78B2897A76B0054FCC3 /* RxSwift in Frameworks */,
+				956AC7892897A76B0054FCC3 /* RxRelay in Frameworks */,
+				956AC7872897A76B0054FCC3 /* RxCocoa in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		956AC75E2897A5FF0054FCC3 = {
+			isa = PBXGroup;
+			children = (
+				956AC7692897A5FF0054FCC3 /* RxSwift-MVVM-qittaAPI */,
+				956AC7682897A5FF0054FCC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		956AC7682897A5FF0054FCC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				956AC7672897A5FF0054FCC3 /* RxSwift-MVVM-qittaAPI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		956AC7692897A5FF0054FCC3 /* RxSwift-MVVM-qittaAPI */ = {
+			isa = PBXGroup;
+			children = (
+				956AC7802897A63C0054FCC3 /* Model */,
+				956AC77F2897A6370054FCC3 /* View */,
+				956AC77E2897A6210054FCC3 /* ViewModel */,
+				956AC7782897A6000054FCC3 /* Info.plist */,
+			);
+			path = "RxSwift-MVVM-qittaAPI";
+			sourceTree = "<group>";
+		};
+		956AC77E2897A6210054FCC3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				956AC7832897A74F0054FCC3 /* QittaArticleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		956AC77F2897A6370054FCC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				956AC76A2897A5FF0054FCC3 /* AppDelegate.swift */,
+				956AC76C2897A5FF0054FCC3 /* SceneDelegate.swift */,
+				956AC76E2897A5FF0054FCC3 /* ViewController.swift */,
+				956AC7702897A5FF0054FCC3 /* Main.storyboard */,
+				956AC7732897A6000054FCC3 /* Assets.xcassets */,
+				956AC7752897A6000054FCC3 /* LaunchScreen.storyboard */,
+				956AC78C2897AB820054FCC3 /* QittaArticleTableViewCell.swift */,
+				956AC78D2897AB820054FCC3 /* QittaArticleTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		956AC7802897A63C0054FCC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				956AC7812897A65C0054FCC3 /* QittaArticle.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		956AC7662897A5FF0054FCC3 /* RxSwift-MVVM-qittaAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 956AC77B2897A6000054FCC3 /* Build configuration list for PBXNativeTarget "RxSwift-MVVM-qittaAPI" */;
+			buildPhases = (
+				956AC7632897A5FF0054FCC3 /* Sources */,
+				956AC7642897A5FF0054FCC3 /* Frameworks */,
+				956AC7652897A5FF0054FCC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RxSwift-MVVM-qittaAPI";
+			packageProductDependencies = (
+				956AC7862897A76B0054FCC3 /* RxCocoa */,
+				956AC7882897A76B0054FCC3 /* RxRelay */,
+				956AC78A2897A76B0054FCC3 /* RxSwift */,
+			);
+			productName = "RxSwift-MVVM-qittaAPI";
+			productReference = 956AC7672897A5FF0054FCC3 /* RxSwift-MVVM-qittaAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		956AC75F2897A5FF0054FCC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					956AC7662897A5FF0054FCC3 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 956AC7622897A5FF0054FCC3 /* Build configuration list for PBXProject "RxSwift-MVVM-qittaAPI" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 956AC75E2897A5FF0054FCC3;
+			packageReferences = (
+				956AC7852897A76B0054FCC3 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
+			productRefGroup = 956AC7682897A5FF0054FCC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				956AC7662897A5FF0054FCC3 /* RxSwift-MVVM-qittaAPI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		956AC7652897A5FF0054FCC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				956AC78F2897AB820054FCC3 /* QittaArticleTableViewCell.xib in Resources */,
+				956AC7772897A6000054FCC3 /* LaunchScreen.storyboard in Resources */,
+				956AC7742897A6000054FCC3 /* Assets.xcassets in Resources */,
+				956AC7722897A5FF0054FCC3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		956AC7632897A5FF0054FCC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				956AC78E2897AB820054FCC3 /* QittaArticleTableViewCell.swift in Sources */,
+				956AC7822897A65C0054FCC3 /* QittaArticle.swift in Sources */,
+				956AC76F2897A5FF0054FCC3 /* ViewController.swift in Sources */,
+				956AC76B2897A5FF0054FCC3 /* AppDelegate.swift in Sources */,
+				956AC76D2897A5FF0054FCC3 /* SceneDelegate.swift in Sources */,
+				956AC7842897A74F0054FCC3 /* QittaArticleViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		956AC7702897A5FF0054FCC3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				956AC7712897A5FF0054FCC3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		956AC7752897A6000054FCC3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				956AC7762897A6000054FCC3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		956AC7792897A6000054FCC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		956AC77A2897A6000054FCC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		956AC77C2897A6000054FCC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7X9S244452;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RxSwift-MVVM-qittaAPI/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mkondo.RxSwift-MVVM-qittaAPI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		956AC77D2897A6000054FCC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7X9S244452;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RxSwift-MVVM-qittaAPI/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mkondo.RxSwift-MVVM-qittaAPI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		956AC7622897A5FF0054FCC3 /* Build configuration list for PBXProject "RxSwift-MVVM-qittaAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				956AC7792897A6000054FCC3 /* Debug */,
+				956AC77A2897A6000054FCC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		956AC77B2897A6000054FCC3 /* Build configuration list for PBXNativeTarget "RxSwift-MVVM-qittaAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				956AC77C2897A6000054FCC3 /* Debug */,
+				956AC77D2897A6000054FCC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		956AC7852897A76B0054FCC3 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		956AC7862897A76B0054FCC3 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 956AC7852897A76B0054FCC3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		956AC7882897A76B0054FCC3 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 956AC7852897A76B0054FCC3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		956AC78A2897A76B0054FCC3 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 956AC7852897A76B0054FCC3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 956AC75F2897A5FF0054FCC3 /* Project object */;
+}
